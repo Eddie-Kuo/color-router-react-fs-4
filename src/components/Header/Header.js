@@ -2,6 +2,7 @@ import { Route } from 'react-router-dom';
 import { Switch } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import Home from '../Home/Home';
+import NotFound from '../NotFound/NotFound';
 import './Header.css';
 
 export default function Header() {
@@ -17,7 +18,9 @@ export default function Header() {
       </header>
 
       <Switch>
-        <Route path={`/rgb/:red/:green/:blue`} component={Home} ></Route>
+        <Route exact path={`/rgb/:red/:green/:blue`} component={Home} ></Route>
+        <Route path="*" component={NotFound} ></Route>
+
       </Switch>
     </>
   );
