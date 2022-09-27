@@ -8,16 +8,12 @@ export default function Header() {
   return (
     <>
       <header>
-        <div>
-          <NavLink to="/rgb/30/144/255">Dodger Blue</NavLink>
-        </div>
+        <ul className='links'>
+          <NavLink ClassName='dodgerblue' activeStyle={{ color: `rgb(30,144,255)` }} to="/rgb/30/144/255">Dodger Blue</NavLink>
+          <NavLink className='lime-green' activeStyle={{ color: `rgb(50,205,50)` }} to="/rgb/50/205/50">Lime Green</NavLink>
+          <NavLink className='dark-orchid' activeStyle={{ color: `rgb(153,50,204)` }} to="/rgb/153/50/204">Dark Orchid</NavLink>
+        </ul>
         {/* Nav links come with an active class that can be styled in css directly  */}
-        <div>
-          <NavLink to="/rgb/50/205/50">Lime Green</NavLink>
-        </div>
-        <div>
-          <NavLink to="/rgb/153/50/204">Dark Orchid</NavLink>
-        </div>
       </header>
 
       <Switch>
@@ -26,3 +22,4 @@ export default function Header() {
     </>
   );
 }
+
