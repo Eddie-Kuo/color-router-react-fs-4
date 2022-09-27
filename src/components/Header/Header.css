@@ -8,3 +8,6 @@ header {
     align-items: center;
 }
 
+.active {
+    color: lightcoral;
+}
