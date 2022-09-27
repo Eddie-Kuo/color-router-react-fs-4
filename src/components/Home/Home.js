@@ -1,12 +1,13 @@
 import { useParams } from 'react-router-dom';
 import './Home.css';
 
-export default function Home() {
+export default function Home({ red, green, blue }) {
   const id = useParams();
-  console.log('id', id);
   return (
-    <main className='body'>
-      Hello World
+    <main style={{ backgroundColor: `rgb(${id.red}, ${id.green}, ${id.blue})` }} >
+      <div>
+        rgb({id.red}, {id.green}, {id.blue})
+      </div>
     </main>
   );
 }
