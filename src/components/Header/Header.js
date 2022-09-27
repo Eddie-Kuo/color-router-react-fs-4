@@ -9,9 +9,9 @@ export default function Header() {
     <>
       <header>
         <ul className='links'>
-          <NavLink ClassName='dodgerblue' activeStyle={{ color: `rgb(30,144,255)` }} to="/rgb/30/144/255">Dodger Blue</NavLink>
-          <NavLink className='lime-green' activeStyle={{ color: `rgb(50,205,50)` }} to="/rgb/50/205/50">Lime Green</NavLink>
-          <NavLink className='dark-orchid' activeStyle={{ color: `rgb(153,50,204)` }} to="/rgb/153/50/204">Dark Orchid</NavLink>
+          <NavLink ClassName='dodgerblue' style={{ color: 'white', textDecoration: 'none', fontSize: '1.5rem' }} activeStyle={{ color: `rgb(30,144,255)` }} to="/rgb/30/144/255">Dodger Blue</NavLink>
+          <NavLink className='lime-green' style={{ color: 'white', textDecoration: 'none', fontSize: '1.5rem' }} activeStyle={{ color: `rgb(50,205,50)` }} to="/rgb/50/205/50">Lime Green</NavLink>
+          <NavLink className='dark-orchid' style={{ color: 'white', textDecoration: 'none', fontSize: '1.5rem' }} activeStyle={{ color: `rgb(153,50,204)` }} to="/rgb/153/50/204">Dark Orchid</NavLink>
         </ul>
         {/* Nav links come with an active class that can be styled in css directly  */}
       </header>
