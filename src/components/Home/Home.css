@@ -1,0 +1,14 @@
+main {
+    /* background-color: rgb(175, 235, 215); */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main div {
+    font-size: 2rem;
+}
+
+
+
